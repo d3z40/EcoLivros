@@ -1,0 +1,760 @@
+{
+  "id": "691b6b7f-3e2c-4d89-90e2-b83750bf4d33",
+  "version": "2.0",
+  "name": "EcoLivros_CRUD_Usuario",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "d8fceb00-8a5a-4e68-a41c-4109c33d014f",
+    "name": "LoginEmailErrado",
+    "commands": [{
+      "id": "8258b480-6189-48f4-b27c-b6b08882ce46",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd1f970-5045-4ed1-aa33-c840c455537f",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@gmail.com"
+    }, {
+      "id": "27cfddfb-9064-453d-a70d-c69cabf8aa63",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "55c007dc-fcd4-4cd2-b126-809860109f4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ca8c04db-1896-47ba-8d3b-d1d210bed495",
+    "name": "LoginSenhaErrada",
+    "commands": [{
+      "id": "5f9992c7-a84b-4f40-9630-3ccfc8fcbb77",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78651cc1-c2d4-4eb4-ad6c-7c41dd36d25b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "804220ef-23c7-43d1-b170-7db7a1bdae97",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Rafalena1903"
+    }, {
+      "id": "99d73abb-e514-44ff-91cc-3cc70d47a3ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bb012d89-148a-422d-8514-6af03fd5a1fa",
+    "name": "CadastroUsuarioEmailDuplicado",
+    "commands": [{
+      "id": "a5dcb9be-7855-44af-b904-31b15972c335",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "407de988-1033-4e24-91c0-45ca2850ecfb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-right small",
+      "targets": [
+        ["css=.text-right small", "css:finder"],
+        ["xpath=//div[2]/a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Crie uma nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb78048f-05ed-43a5-bef0-16f5dece9a3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Fulano da Silva"
+    }, {
+      "id": "26f17782-1716-479b-a709-b2f277e3aeaa",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCPF",
+      "targets": [
+        ["id=txtCPF", "id"],
+        ["name=txtCPF", "name"],
+        ["css=#txtCPF", "css:finder"],
+        ["xpath=//input[@id='txtCPF']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "12345678909"
+    }, {
+      "id": "68b9e821-d65d-4a91-9597-d42b411d00e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "dabba671-f9e9-465b-ae91-9f24352f7c00",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "d66cc3e3-e12a-4dc4-aa81-0fdad2dfef08",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenhaRepetida",
+      "targets": [
+        ["id=txtSenhaRepetida", "id"],
+        ["name=txtSenhaRepetida", "name"],
+        ["css=#txtSenhaRepetida", "css:finder"],
+        ["xpath=//input[@id='txtSenhaRepetida']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "cb30ea81-051d-48f5-8949-753e628a74a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=chkRegister",
+      "targets": [
+        ["id=chkRegister", "id"],
+        ["name=chkRegister", "name"],
+        ["css=#chkRegister", "css:finder"],
+        ["xpath=//input[@id='chkRegister']", "xpath:attributes"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78bba5b1-72cc-4fce-9039-9056c449c049",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "258c9dc9-50c0-4a40-938a-9e514fe6a7b2",
+    "name": "CadastroUsuarioCPFDuplicado",
+    "commands": [{
+      "id": "c783a154-6b5d-48cc-9c89-7ce01a2e40fb",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e7304b-3074-4d9c-97af-f9354c0e7cbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-right small",
+      "targets": [
+        ["css=.text-right small", "css:finder"],
+        ["xpath=//div[2]/a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Crie uma nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d797053-fc03-46b2-8109-1157311a3db1",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Fulano da Silva"
+    }, {
+      "id": "28fc134c-ffa6-4ac6-82b4-445bf56a18ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCPF",
+      "targets": [
+        ["id=txtCPF", "id"],
+        ["name=txtCPF", "name"],
+        ["css=#txtCPF", "css:finder"],
+        ["xpath=//input[@id='txtCPF']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "30452626862"
+    }, {
+      "id": "ce61d2b1-927a-4d29-ba7d-c20aa5840706",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "fulano.silva@hotmail.com"
+    }, {
+      "id": "33379cc4-82a4-4443-aba1-fa864177d157",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "0c8091f4-1e18-4525-bbbf-e112e9b20c30",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenhaRepetida",
+      "targets": [
+        ["id=txtSenhaRepetida", "id"],
+        ["name=txtSenhaRepetida", "name"],
+        ["css=#txtSenhaRepetida", "css:finder"],
+        ["xpath=//input[@id='txtSenhaRepetida']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "e6fc3393-6eb7-4464-95c6-9ba3fe6fd8b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=chkRegister",
+      "targets": [
+        ["id=chkRegister", "id"],
+        ["name=chkRegister", "name"],
+        ["css=#chkRegister", "css:finder"],
+        ["xpath=//input[@id='chkRegister']", "xpath:attributes"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f879e00e-ed33-4e91-9c1d-d406cad7fb20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9276fd96-12ee-4350-85e5-cf3c5987fbaf",
+    "name": "CadastroUsuarioSenhasDiferentes",
+    "commands": [{
+      "id": "92f88f6b-c67e-46e3-a6c1-c06c34f5b2ce",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "060e0f2e-b2eb-467c-907c-b95bb2b4603d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-right small",
+      "targets": [
+        ["css=.text-right small", "css:finder"],
+        ["xpath=//div[2]/a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Crie uma nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1971cd07-9571-413b-8868-9293303e4d60",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Fulano da Silva"
+    }, {
+      "id": "e2cb3ad7-b755-4758-bc14-5a01312f6098",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCPF",
+      "targets": [
+        ["id=txtCPF", "id"],
+        ["name=txtCPF", "name"],
+        ["css=#txtCPF", "css:finder"],
+        ["xpath=//input[@id='txtCPF']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "12345678909"
+    }, {
+      "id": "56413ed0-1093-4280-99c4-7d5be6c96f04",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "fulano.silva@hotmail.com"
+    }, {
+      "id": "fb361cf5-3cb0-4fbf-981c-6bd03df14346",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ce7c9b3a-038b-4b83-9093-78b52646cff7",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenhaRepetida",
+      "targets": [
+        ["id=txtSenhaRepetida", "id"],
+        ["name=txtSenhaRepetida", "name"],
+        ["css=#txtSenhaRepetida", "css:finder"],
+        ["xpath=//input[@id='txtSenhaRepetida']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "1234567"
+    }, {
+      "id": "69d81248-788e-47da-93d2-ec23d89a2a40",
+      "comment": "",
+      "command": "click",
+      "target": "id=chkRegister",
+      "targets": [
+        ["id=chkRegister", "id"],
+        ["name=chkRegister", "name"],
+        ["css=#chkRegister", "css:finder"],
+        ["xpath=//input[@id='chkRegister']", "xpath:attributes"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4c44493-7028-4986-853c-729c6b982521",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6d58c8e6-7b6b-430b-9220-82d0846181ab",
+    "name": "CadastroUsuarioSemAceitarTermos",
+    "commands": [{
+      "id": "142ad614-b6d5-44d6-a064-5db6a7652eff",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db344e3b-56d6-4f18-866c-3e1cec38d098",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-right small",
+      "targets": [
+        ["css=.text-right small", "css:finder"],
+        ["xpath=//div[2]/a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Crie uma nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29635a9-809c-4a9d-82b6-f5428192ccbe",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Fulano da Silva"
+    }, {
+      "id": "770e2263-91c7-48d0-bfcb-ebf3e5b516a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCPF",
+      "targets": [
+        ["id=txtCPF", "id"],
+        ["name=txtCPF", "name"],
+        ["css=#txtCPF", "css:finder"],
+        ["xpath=//input[@id='txtCPF']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "12345678909"
+    }, {
+      "id": "2b069ec7-7c67-44c6-895b-aa8e525c5c38",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "fulano.silva@hotmail.com"
+    }, {
+      "id": "c8ea2dde-3200-4590-a142-59be65125e22",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6e024123-7b57-4128-9cca-c1f628748cbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenhaRepetida",
+      "targets": [
+        ["id=txtSenhaRepetida", "id"],
+        ["name=txtSenhaRepetida", "name"],
+        ["css=#txtSenhaRepetida", "css:finder"],
+        ["xpath=//input[@id='txtSenhaRepetida']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "5f8e3d43-cb4c-4279-bf57-1b2ade26f29d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6912e7ce-f323-4336-bdc8-0052c6b284e3",
+    "name": "LoginCliente",
+    "commands": [{
+      "id": "3cd8187b-d057-4994-8618-73e3735d8c15",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc02bdec-65cf-40e1-826c-695585b4667e",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "9acc6db5-2b35-4fe1-8d93-a449a5456f87",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "d3e971be-885b-4a06-be2b-b41e525a0451",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c07dc682-5b4f-4903-9c08-2feaad19a99a",
+    "name": "LoginFunc",
+    "commands": [{
+      "id": "deae519b-4ba7-4472-81be-05e20acdf86d",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54ef84df-fed2-45e7-bb56-c72890b17fe5",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "andre.pereira22@fatec.sp.gov.br"
+    }, {
+      "id": "c144b699-a354-45e6-b3cd-e27e0c4da36b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "LenaRafa0319"
+    }, {
+      "id": "356e1a6a-1c04-4193-a956-fab45fff85f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bf534418-32b8-488f-b8fd-73dfc3373a46",
+    "name": "CadastroUsuarioOk",
+    "commands": [{
+      "id": "66eefbe3-c3b9-4e62-9054-e47a742185e7",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2596e591-dd04-4e7a-8c7e-b51c3efe83f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-right small",
+      "targets": [
+        ["css=.text-right small", "css:finder"],
+        ["xpath=//div[2]/a/small", "xpath:position"],
+        ["xpath=//small[contains(.,'Crie uma nova conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e927e6e9-8adb-438b-8f5e-f3f621fc443b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Janaina Barros da Costa\\n"
+    }, {
+      "id": "72a0c260-7588-4baf-8706-bb5b7cb08d03",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCPF",
+      "targets": [
+        ["id=txtCPF", "id"],
+        ["name=txtCPF", "name"],
+        ["css=#txtCPF", "css:finder"],
+        ["xpath=//input[@id='txtCPF']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "31951459873"
+    }, {
+      "id": "efdae029-e43c-4dbb-847a-5278ec87a563",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "5cb1dcce-df02-448e-a64e-866078377377",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "061820eb-b1fd-444a-90c1-e0326440ee4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenhaRepetida",
+      "targets": [
+        ["id=txtSenhaRepetida", "id"],
+        ["name=txtSenhaRepetida", "name"],
+        ["css=#txtSenhaRepetida", "css:finder"],
+        ["xpath=//input[@id='txtSenhaRepetida']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "15ac6a65-a799-4433-ae3c-5612ff88d4d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=chkRegister",
+      "targets": [
+        ["id=chkRegister", "id"],
+        ["name=chkRegister", "name"],
+        ["css=#chkRegister", "css:finder"],
+        ["xpath=//input[@id='chkRegister']", "xpath:attributes"],
+        ["xpath=//div[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a35d1535-e32c-40f4-aa82-c05bb6e20400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Criar Conta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "50b6bb68-6919-4a36-8b39-23c39bf03639",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8fceb00-8a5a-4e68-a41c-4109c33d014f"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

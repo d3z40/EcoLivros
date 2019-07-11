@@ -1,0 +1,955 @@
+{
+  "id": "691b6b7f-3e2c-4d89-90e2-b83750bf4d33",
+  "version": "2.0",
+  "name": "EcoLivros_CRUD_Cliente",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "d8fceb00-8a5a-4e68-a41c-4109c33d014f",
+    "name": "CadastroEndErro",
+    "commands": [{
+      "id": "8258b480-6189-48f4-b27c-b6b08882ce46",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd1f970-5045-4ed1-aa33-c840c455537f",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "27cfddfb-9064-453d-a70d-c69cabf8aa63",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "55c007dc-fcd4-4cd2-b126-809860109f4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0b5d2f3-c395-41ec-8faa-336beb591543",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17524839-0295-4a18-848b-4dc469e7185c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "939e7d01-5f95-427f-ac1a-806b6f2c9d90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro de Endereço",
+      "targets": [
+        ["linkText=Cadastro de Endereço", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './cadastra_enderecos.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro de Endereço')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d78a89-ce9f-4d0b-ab4b-6a8686ffdd75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "61cb9a12-e0f6-40fa-98e2-14c15da09839",
+    "name": "CadastroEndOK",
+    "commands": [{
+      "id": "cd0315f3-1d9f-4891-b8ce-328c0570424a",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b996554d-de98-4a30-85a6-2935b0d5201c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "9ae3872c-78fe-4296-bc97-736d13397133",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "6706a323-0cca-4685-a3b1-31c7e49f2858",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5489f0-b90d-4771-9320-e5af20e477df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4760581e-e7bd-49c4-af82-d78eaa757a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e629da6-935e-436a-aa76-63c8d537c085",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro de Endereço",
+      "targets": [
+        ["linkText=Cadastro de Endereço", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './cadastra_enderecos.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro de Endereço')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b637431f-eb7b-468f-9696-ca1dc01118a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtDescricao",
+      "targets": [
+        ["id=txtDescricao", "id"],
+        ["name=txtDescricao", "name"],
+        ["css=#txtDescricao", "css:finder"],
+        ["xpath=//input[@id='txtDescricao']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Casa"
+    }, {
+      "id": "391b42a6-865f-479d-92c6-cea862e2e806",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtLogradouro",
+      "targets": [
+        ["id=txtLogradouro", "id"],
+        ["name=txtLogradouro", "name"],
+        ["css=#txtLogradouro", "css:finder"],
+        ["xpath=//input[@id='txtLogradouro']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Rua Reginaldo Carneiro Rocha"
+    }, {
+      "id": "8c013a63-c1dd-4a48-b384-50811ad15ded",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNum",
+      "targets": [
+        ["id=txtNum", "id"],
+        ["name=txtNum", "name"],
+        ["css=#txtNum", "css:finder"],
+        ["xpath=//input[@id='txtNum']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "76"
+    }, {
+      "id": "86a03d57-4a8b-4871-ae19-cfecf3043673",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtBairro",
+      "targets": [
+        ["id=txtBairro", "id"],
+        ["name=txtBairro", "name"],
+        ["css=#txtBairro", "css:finder"],
+        ["xpath=//input[@id='txtBairro']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Jardim Graziela"
+    }, {
+      "id": "2ed1d606-bd94-46b7-af03-7f0bbc830b6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCidade",
+      "targets": [
+        ["id=txtCidade", "id"],
+        ["name=txtCidade", "name"],
+        ["css=#txtCidade", "css:finder"],
+        ["xpath=//input[@id='txtCidade']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Suzano"
+    }, {
+      "id": "531ebd1c-0a17-405b-ab64-5a8b1a0e540d",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEstado",
+      "targets": [
+        ["id=txtEstado", "id"],
+        ["name=txtEstado", "name"],
+        ["css=#txtEstado", "css:finder"],
+        ["xpath=//input[@id='txtEstado']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "São Paulo"
+    }, {
+      "id": "6addfe4e-4c1a-43fb-b1dc-82063b411f75",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCEP",
+      "targets": [
+        ["id=txtCEP", "id"],
+        ["name=txtCEP", "name"],
+        ["css=#txtCEP", "css:finder"],
+        ["xpath=//input[@id='txtCEP']", "xpath:attributes"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "08695440"
+    }, {
+      "id": "0ff8ef14-2859-42d1-b636-dfa5696b46fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "43b414e3-09f0-4204-95e9-1ab7f515a531",
+    "name": "CadastroCartaoErro",
+    "commands": [{
+      "id": "0aee4dcb-1af0-4325-b411-9d979f2f575d",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90455952-7deb-4729-bcb0-1ef32becff0c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "66109a8c-dd55-424f-8d08-ae90135d5b75",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "6e2b575a-7619-4f59-89b0-b5ab3a4a3e1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d031d14-bb66-4db7-b406-814ee50e0f40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a7b54e5-2522-4335-a054-1d084eee4a77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ce490f-09da-4fdf-b02f-92bbaeb8522c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro de Cartão",
+      "targets": [
+        ["linkText=Cadastro de Cartão", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './cadastra_cartoes.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro de Cartão')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a4a7df-1dfc-4fbd-809a-1ba14d58f4cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c54db118-2aab-4b4a-bb18-cd8b620ca633",
+    "name": "CadastroCartaoOK",
+    "commands": [{
+      "id": "f357b434-ebfb-42e3-9ecd-44a1c6c82173",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ce53c84-7a26-4b1a-a3f0-c167e2e6a280",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "501f72d4-934a-4d23-89fd-0b454956159c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "1d848af1-7efe-4638-96ce-c8b619494db6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc9a5bc1-4f83-471f-9835-514f4b4132b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc1266c2-b65e-4cfa-b42f-9d72979c26c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06748828-d787-4bf3-9cca-68063610e95a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro de Cartão",
+      "targets": [
+        ["linkText=Cadastro de Cartão", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './cadastra_cartoes.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro de Cartão')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c9a50a-681b-4f2e-9821-e3b284f08521",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNomeNoCartao",
+      "targets": [
+        ["id=txtNomeNoCartao", "id"],
+        ["name=txtNomeNoCartao", "name"],
+        ["css=#txtNomeNoCartao", "css:finder"],
+        ["xpath=//input[@id='txtNomeNoCartao']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Janaina"
+    }, {
+      "id": "235ae251-095e-4d7c-98a8-c878eaf7f02b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNumeroDoCartao",
+      "targets": [
+        ["id=txtNumeroDoCartao", "id"],
+        ["name=txtNumeroDoCartao", "name"],
+        ["css=#txtNumeroDoCartao", "css:finder"],
+        ["xpath=//input[@id='txtNumeroDoCartao']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "344d168e-e47a-4d9d-accf-228575825750",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtMesValidade",
+      "targets": [
+        ["id=txtMesValidade", "id"],
+        ["name=txtMesValidade", "name"],
+        ["css=#txtMesValidade", "css:finder"],
+        ["xpath=//input[@id='txtMesValidade']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "06"
+    }, {
+      "id": "5f7ebf66-559e-4fda-8c63-4f717d8cd360",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtAnoValidade",
+      "targets": [
+        ["id=txtAnoValidade", "id"],
+        ["name=txtAnoValidade", "name"],
+        ["css=#txtAnoValidade", "css:finder"],
+        ["xpath=//input[@id='txtAnoValidade']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2045"
+    }, {
+      "id": "e9be80fc-540c-4e2c-964c-414a9b8c434c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtCodigoSeguranca",
+      "targets": [
+        ["id=txtCodigoSeguranca", "id"],
+        ["name=txtCodigoSeguranca", "name"],
+        ["css=#txtCodigoSeguranca", "css:finder"],
+        ["xpath=//input[@id='txtCodigoSeguranca']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "345"
+    }, {
+      "id": "abe50751-3582-467f-9523-972a6aa36412",
+      "comment": "",
+      "command": "select",
+      "target": "id=txtBandeira",
+      "targets": [],
+      "value": "label=MasterCard"
+    }, {
+      "id": "bcd45ec2-8879-468a-b7bf-df55e70fb734",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2f7a562b-195e-443e-926d-2fbe0693cd1b",
+    "name": "AlteraCartao",
+    "commands": [{
+      "id": "a6b450f7-a1ec-43f1-9d01-d858882df178",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d715a56f-6dd6-4fea-96fe-13d57cfb5a77",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "886aa4cf-da7f-45f8-8547-4f0aa6f564e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "dd52d102-bd4c-4f4b-8e25-db609a4cb89b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50a708f0-76df-4c40-aa1f-3a35e6aef4ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b39ad30-d159-4905-b9e1-e5579d63001a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62af7138-94b6-4c50-9750-9c90ae25c02d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consulta Cartões",
+      "targets": [
+        ["linkText=Consulta Cartões", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './consulta_cartoes.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consulta Cartões')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1b7d984-7902-462a-8985-5597bed58a71",
+      "comment": "",
+      "command": "click",
+      "target": "id=operacao",
+      "targets": [
+        ["id=operacao", "id"],
+        ["name=operacao", "name"],
+        ["css=#operacao", "css:finder"],
+        ["xpath=//input[@id='operacao']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7a6b7bd-390f-4261-a1ca-70ad06888fe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn",
+      "targets": [
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//table[@id='tblCartaoDeCredito']/tbody/tr/td[5]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//td[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a3855ff-f5d2-4296-a3e9-3542b0979c50",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alterar",
+      "targets": [
+        ["linkText=Alterar", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Alterar')]", "xpath:link"],
+        ["xpath=//table[@id='tblCartaoDeCredito']/tbody/tr/td[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'SalvarCartaoDeCredito?operacao=CONSULTAR&IdCartaoDeCredito=1')]", "xpath:href"],
+        ["xpath=//td[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5cf0776-6021-4b42-8913-8e3646864637",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNomeNoCartao",
+      "targets": [
+        ["id=txtNomeNoCartao", "id"],
+        ["name=txtNomeNoCartao", "name"],
+        ["css=#txtNomeNoCartao", "css:finder"],
+        ["xpath=//input[@id='txtNomeNoCartao']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Janaina Barros da Costa"
+    }, {
+      "id": "2ea0cb4b-5367-41e9-b706-23836347b580",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "727acb04-7330-4e52-a875-dfd7af459e3c",
+    "name": "RemoveCartao",
+    "commands": [{
+      "id": "bf039b63-e1ec-436c-ba1d-3f316bfa1062",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca14dc5c-a978-4f94-baa0-c5f4ca895dd9",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "941cf8d5-5218-4c96-9669-cabc81134249",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "b5b27e7a-be7a-41de-a989-510eb45c3b2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66da2bb6-af45-446c-9fe9-7f20844d0e06",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-sm",
+      "targets": [
+        ["css=.text-sm", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33906572-cbab-468e-af0f-c585d2b96ce3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88eaac87-bf2b-4432-b196-edcf35fb0349",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consulta Cartões",
+      "targets": [
+        ["linkText=Consulta Cartões", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='sidenav-collapse-main']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './consulta_cartoes.jsp?IdUsuario=2')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consulta Cartões')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bcd8b13-4963-4f9e-a3a8-770eaf11a350",
+      "comment": "",
+      "command": "click",
+      "target": "id=operacao",
+      "targets": [
+        ["id=operacao", "id"],
+        ["name=operacao", "name"],
+        ["css=#operacao", "css:finder"],
+        ["xpath=//input[@id='operacao']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d195e780-e93e-49f5-8fcc-652ee55a789c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn",
+      "targets": [
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//table[@id='tblCartaoDeCredito']/tbody/tr/td[5]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//td[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e26b46cd-13da-4139-a8d6-127d69e82215",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir",
+      "targets": [
+        ["linkText=Excluir", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir')]", "xpath:link"],
+        ["xpath=//table[@id='tblCartaoDeCredito']/tbody/tr/td[5]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'SalvarCartaoDeCredito?operacao=EXCLUIR&IdCartaoDeCredito=1&IdUsuario=2')]", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8aa11e8a-81c3-4544-ad8c-302e5905dc30",
+    "name": "AlteraPerfil",
+    "commands": [{
+      "id": "da78554f-603d-442c-bdff-ac2359f04f95",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f8ed9b6-11f2-422a-86df-884944c53cce",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "e34872cb-5766-43c6-a624-10c69fc3d31d",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "7efb067c-33d8-4d2e-a96b-85234009ca71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01f0ace3-41ca-4a78-bda6-f372b1ceb7c9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fulano",
+      "targets": [
+        ["linkText=Fulano", "linkText"],
+        ["css=.pr-0", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[19]", "xpath:href"],
+        ["xpath=//nav/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Fulano')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afcc1081-a81c-4654-9b54-4b5760fd0612",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(2) > span",
+      "targets": [
+        ["css=.dropdown-item:nth-child(2) > span", "css:finder"],
+        ["xpath=//nav[@id='navbar-main']/div/ul/li/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Meu Perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02263413-5edb-4ced-a8f7-ed4196c6d32a",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtNome",
+      "targets": [
+        ["id=txtNome", "id"],
+        ["name=txtNome", "name"],
+        ["css=#txtNome", "css:finder"],
+        ["xpath=//input[@id='txtNome']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Janaina Barros da Costa Pereira"
+    }, {
+      "id": "1950da93-0c84-45ad-a683-e299b0d420e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "50b6bb68-6919-4a36-8b39-23c39bf03639",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8fceb00-8a5a-4e68-a41c-4109c33d014f"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

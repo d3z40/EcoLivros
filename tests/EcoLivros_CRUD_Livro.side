@@ -1,0 +1,117 @@
+{
+  "id": "691b6b7f-3e2c-4d89-90e2-b83750bf4d33",
+  "version": "2.0",
+  "name": "EcoLivros_CRUD_Endereco",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "d8fceb00-8a5a-4e68-a41c-4109c33d014f",
+    "name": "LoginEmailErrado",
+    "commands": [{
+      "id": "8258b480-6189-48f4-b27c-b6b08882ce46",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd1f970-5045-4ed1-aa33-c840c455537f",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@gmail.com"
+    }, {
+      "id": "27cfddfb-9064-453d-a70d-c69cabf8aa63",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "RafaLena1903"
+    }, {
+      "id": "ad435752-e7c0-4cef-b23e-0b7db64d6671",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "ca8c04db-1896-47ba-8d3b-d1d210bed495",
+    "name": "LoginSenhaErrada",
+    "commands": [{
+      "id": "5f9992c7-a84b-4f40-9630-3ccfc8fcbb77",
+      "comment": "",
+      "command": "open",
+      "target": "/EcoLivros/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78651cc1-c2d4-4eb4-ad6c-7c41dd36d25b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtEmail",
+      "targets": [
+        ["id=txtEmail", "id"],
+        ["name=txtEmail", "name"],
+        ["css=#txtEmail", "css:finder"],
+        ["xpath=//input[@id='txtEmail']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "jana.costa_13@hotmail.com"
+    }, {
+      "id": "804220ef-23c7-43d1-b170-7db7a1bdae97",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Rafalena1903"
+    }, {
+      "id": "b7ea249c-2473-460b-b2a7-0ad7e4c851df",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=txtSenha",
+      "targets": [
+        ["id=txtSenha", "id"],
+        ["name=txtSenha", "name"],
+        ["css=#txtSenha", "css:finder"],
+        ["xpath=//input[@id='txtSenha']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "50b6bb68-6919-4a36-8b39-23c39bf03639",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d8fceb00-8a5a-4e68-a41c-4109c33d014f"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
